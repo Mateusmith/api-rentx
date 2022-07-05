@@ -32,4 +32,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.ssh_key }}
           source: "., !node_modules"
-          target: "test"
+          target: "~/nodejs/api-rentx"
