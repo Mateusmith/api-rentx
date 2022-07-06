@@ -42,8 +42,6 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            export NVM_DIR=~/.nvm
-            source ~/.nvm/nvm.sh
             cd ~/nodejs/api-rentx
             yarn
             ./node_modules/.bin/typeorm migration:run
